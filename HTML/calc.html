@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Rekenmachine</h1>
+
+    <input type="number" id="invoer-1" value="1">
+    <input type="number" id="invoer-2" value="2">
+    <button type="button" onclick="telop()">+ Telop</button>
+    <button type="button" onclick="divide()">+ divide</button>
+    
+    
+    <!--span id="telopSpan"></span> -->
+    <span id="divideSpan"></span>
+
+    <button type="button" onclick=""
+
+    <script>
+
+        function telop() {
+            let elem1 = document.getElementById('invoer-1')
+            let elem2 = document.getElementById('invoer-2')
+
+            console.log('Element 1:', elem1);
+
+            //waarde van de elements uitlezen
+            let elem1Value = parseInt(elem1.value);
+            let elem2Value = parseInt(elem2.value);
+
+            console.log(elem1Value + elem2Value)
+
+            //Tel elem1Value + elem2Value en plaat de uitkomst
+            //in de span -> innerText
+
+            document.getElementById('divideSpan').innerText= elem1Value + elem2Value
+        }
+
+        function divide() {
+            let elem1 = document.getElementById('invoer-1')
+            let elem2 = document.getElementById('invoer-2')
+
+            console.log('Element 1:', elem1);
+            let elem1Value = parseInt(elem1.value);
+            let elem2Value = parseInt(elem2.value);
+            let resultaat = elem1Value / elem2Value;
+
+            document.getElementById('divideSpan').innerText=resultaat
+        }
+
+    </script>
+
+</body>
+</html>
